@@ -1,0 +1,20 @@
+.breadcrumb {
+    column-gap: 10px;
+    padding: 20px 0;
+    border-bottom: 1px solid silver;
+    align-items: center;
+    a {
+        color: gray;
+        transition: ease-in-out 0.2s;
+        &:hover {
+            color: silver;
+            transition: ease-in-out 0.2s;
+        }
+        &.activeLink {
+            color: $secondary-color;
+        }
+    }
+    i {
+        font-size: 8px;
+    }
+}

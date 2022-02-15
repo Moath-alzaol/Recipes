@@ -1,0 +1,27 @@
+.home {
+    height: 100vh;
+    padding: 50px 0;
+    .home__search {
+        margin: 20px 0;
+        input {
+            // border: 0;
+            &::placeholder {
+                color: #c6c6c6;
+            }
+        }
+        .input-group-text {
+            background-color: #a7a7a7;
+            border: 0;
+            cursor: pointer;
+            padding: 0.375rem 0.375rem;
+        }
+    }
+    .home__no-result {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 20vh;
+        font-size: 20px;
+        font-weight: bold;
+    }
+}

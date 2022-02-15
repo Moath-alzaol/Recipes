@@ -1,0 +1,46 @@
+.recipe-details {
+    min-height: 100vh;
+    padding: 50px 0;
+
+    .recipe-details__main-image {
+        width: 100%;
+        border-radius: 15px;
+    }
+    h2 {
+        color: $secondary-color;
+        font-weight: bold;
+        text-transform: capitalize;
+    }
+    p {
+        font-size: 18px;
+    }
+    .recipe-details__Ingredients,
+    .recipe-details__instructions {
+        h3 {
+            font-size: 25px;
+            font-weight: bold;
+            text-transform: capitalize;
+        }
+    }
+    .recipe-details__Ingredients {
+        ul {
+            list-style: disc;
+            li {
+                font-size: 18px;
+            }
+        }
+    }
+
+    @include respond(large-phone) {
+        padding: 0 0 20px 0;
+        p {
+            font-size: 15px;
+        }
+        .recipe-details__Ingredients,
+        .recipe-details__instructions {
+            h3 {
+                font-size: 22px;
+            }
+        }
+    }
+}
